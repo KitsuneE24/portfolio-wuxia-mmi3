@@ -1,0 +1,49 @@
+/* Ambiances : printemps, automne (défaut), nuit */
+:root{
+  --hanzi:"Ma Shan Zheng","STKaiti","KaiTi",serif;
+  --serif:"Spectral",Georgia,"Times New Roman",serif;
+  --sc:"Spectral SC","Spectral",Georgia,serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  /* 秋 Automne — beige papier, rouge laque, ardoise (défaut clair) */
+  color-scheme:light;
+  --bg:#EEE5D2; --bg-2:#E5D9C0; --bg-3:#D9C9AA;
+  --fg:#2A2420; --fg-dim:#5D5247; --fg-faint:#8C8070;
+  --cinnabar:#B0271E; --cinnabar-soft:#8C1D16; --on-accent:#F8EFE0;
+  --gold:#A8823F; --jade:#3E6470; --jade-deep:#A9BCBF;
+  --line:rgba(90,60,35,.22);
+  --sky-1:#EDE2CB; --sky-2:#D8C5A2; --m1:#C9B38D; --m2:#A48C69; --m3:#56606A; --moon:#F9F0DF;
+  --branch:#2A2420; --blossom:#B0271E; --bird:#3A332C; --glow:#E9C98E;
+  --door:#7A2B22; --door-bar:#4F1914; --door-paper:#F3E9D5; --frame:#5A1F18;
+  --card:#F6EFE1; --shadow:rgba(80,40,20,.18);
+  --c1:#AC443A; --c2:#BC6C36; --c3:#9C7A33; --c4:#5C7747; --c5:#3C5970;
+}
+:root[data-theme="printemps"]{
+  /* 春 Printemps — vert tendre, jaune soleil, orange des fruits */
+  color-scheme:light;
+  --bg:#F2F0DA; --bg-2:#E7E9CB; --bg-3:#DADFB9;
+  --fg:#2E3829; --fg-dim:#56624B; --fg-faint:#848C73;
+  --cinnabar:#CF5427; --cinnabar-soft:#B3441C; --on-accent:#FCF8E8;
+  --gold:#B8911F; --jade:#4F7F3C; --jade-deep:#9DB984;
+  --line:rgba(79,110,58,.24);
+  --sky-1:#F7F3CF; --sky-2:#DCE8AE; --m1:#BFD196; --m2:#95B173; --m3:#6C8C52; --moon:#FFF4C4;
+  --branch:#4C5838; --blossom:#E8742E; --bird:#5A6545; --glow:#F9E7A0;
+  --door:#B69464; --door-bar:#7E6037; --door-paper:#F7F2DC; --frame:#8B6B42;
+  --card:#FAF8E9; --shadow:rgba(78,90,40,.18);
+  --c1:#B04A2E; --c2:#C97A28; --c3:#A88C1E; --c4:#4F7F3C; --c5:#3F6473;
+}
+:root[data-theme="nuit"]{
+  /* 夜 Nuit — pluie et jade */
+  color-scheme:dark;
+  --bg:#121A1F; --bg-2:#19242A; --bg-3:#223039;
+  --fg:#DCE6E2; --fg-dim:#9AAFAB; --fg-faint:#627679;
+  --cinnabar:#CF5B43; --cinnabar-soft:#A8452F; --on-accent:#F4EEE4;
+  --gold:#B7A26C; --jade:#6FC0B5; --jade-deep:#2E5B58;
+  --line:rgba(111,192,181,.18);
+  --sky-1:#1B2C33; --sky-2:#2D4B53; --m1:#26404A; --m2:#1F333B; --m3:#172730; --moon:#CFE7E1;
+  --branch:#0C1316; --blossom:#CF5B43; --bird:#9FC2BC; --glow:#2E5157;
+  --door:#1D2428; --door-bar:#0B0F11; --door-paper:#355F63; --frame:#0E1417;
+  --card:#19242A; --shadow:rgba(0,0,0,.45);
+  --c1:#D2705C; --c2:#DC9560; --c3:#C9B071; --c4:#82AB6D; --c5:#749FC0;
+}

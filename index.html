@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>江湖 · Portfolio BUT MMI DWeb</title>
+  <meta name="description" content="Portfolio de BUT MMI, parcours développement web et dispositifs interactifs : compétences du référentiel et réalisations professionnelles.">
+
+  <!-- Applique l'ambiance avant le premier rendu, pour éviter un clignotement. -->
+  <script>
+    try{
+      var t = localStorage.getItem("ambiance");
+      if(t !== "printemps" && t !== "automne" && t !== "nuit"){
+        t = matchMedia("(prefers-color-scheme: dark)").matches ? "nuit" : "automne";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+      if(!sessionStorage.getItem("entered") && !matchMedia("(prefers-reduced-motion: reduce)").matches){
+        document.documentElement.setAttribute("data-intro", "1");
+      }
+    }catch(e){}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Spectral:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Spectral+SC:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
